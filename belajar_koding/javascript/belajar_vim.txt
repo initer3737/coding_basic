@@ -1,0 +1,72 @@
+ kode normal mode tekan escape
+mode insert tekan i
+s untuk search text
+visual mode tekan escape lalu tekan v untuk select teks 
+ :q! exit tanpa save file 
+ comannd mode masuk normal mode lalu tekan : 
+
+ install framework neovim yakni lazyvim
+ https://www.lazyvim.org/installation
+
+ install neovim di https://neovim.io/ 
+untuk belajar neovim cari materi di youtube atau artikel bertema belajar vim
+
+:write untuk men save file atau :w 
+
+:wq write and quit 
+load belajar file :edit belajar.txt[file yang ingin diload] ringkas :e
+
+menyimpan perubahan :w tidak disave file :q!
+
+save file with new name like save as :w 
+
+nah 
+
+
+vim is fun and memory efficiency your computer will thanks to you
+
+j bergerak ke bawah 
+
+l ke kanan 
+
+k ke atas 
+
+h ke kiri 
+
+0 untuk ke awal baris $ untuk ke akhir baris 
+
+navigasi kata 
+
+b huruf pertama yang dipilih  mempermudah pembelajaran b untuk begin w word e untuk end  
+w untuk memindahkan kursor ke huruf pertama dari kata berikutnya 
+e untuk memindahkan kursor ke huruf terakhir dari kata selanjutnya  
+
+
+navigasi jendela tekan shift + keys
+atas H 
+tengah M 
+bawah L 
+
+scrolling  ctrl + keys 
+halaman penuh ke depan f ke belakang b 
+halaman setengah atas u bawah d lompat ke awal file gg akhir G 
+
+copy istilahnya yank tekan tombol y, pilih teks dengan mode visual 
+paste tekan p  
+undo tekan u untuk undo
+cut: d juga bisa untuk delete 
+redo tekan ctrl +r untuk redo
+d untuk delete
+
+pencarian vim 
+tekan / untuk mencari teks lalu untuk next n atau * untuk mundur N atau # 
+pencarian berdasarkan posisi cursor kebawah
+ggn untuk menavigasi ke awal file dan n untuk next ke pencarian kata selanjutnya   
+untuk memunculkan hightlight arahkan ke kalimat lalu tekan shift+ * atau #
+ untuk mengaktifkan hightlight tekan : ketikan :set hls non aktifkan dengan :set nohls
+incremental search sama seperti diatas tetapi incremental search saat mengetik maka akan langsung di hightlight tanpa tekan enter 
+
+
+
+
+15/02/2026
