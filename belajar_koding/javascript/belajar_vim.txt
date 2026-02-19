@@ -59,14 +59,86 @@ redo tekan ctrl +r untuk redo
 d untuk delete
 
 pencarian vim 
-tekan / untuk mencari teks lalu untuk next n atau * untuk mundur N atau # 
-pencarian berdasarkan posisi cursor kebawah
-ggn untuk menavigasi ke awal file dan n untuk next ke pencarian kata selanjutnya   
-untuk memunculkan hightlight arahkan ke kalimat lalu tekan shift+ * atau #
- untuk mengaktifkan hightlight tekan : ketikan :set hls non aktifkan dengan :set nohls
-incremental search sama seperti diatas tetapi incremental search saat mengetik maka akan langsung di hightlight tanpa tekan enter 
+tekan tombol s atau / lalu di enter
+n untuk me hightlight kata yang di cari next [maju] 
+sebelumnya tekan N untuk pencarian [mundur] 
+pencarian dilakukan/dimulai di posisi kursor yang terakhir aktif di line tertentu
+gg [pindah kursor ke baris pertama] n untuk mencari next search result
+G untuk ke baris terakhir 
 
+untuk mempermudah tanda tekan tombol s atau / maka kerahkan kursor ke tulisan yang akan dicari lalu tekan tombol seperti * atau # 
+*digunakkan pencarian kata ke depan # ke belakang 
+
+setting search 
+di comand line 
+ 	:set hlsearch 
+	:set nohlsearch
+	:set incsearch
+incremental search tanpa di tekan enter saat mencari maka langsung otomatis teks yang dicari akan di hightlight
 
 
 
 15/02/2026
+
+
+:Explore atau :E: Membuka explorer di jendela saat ini.
+:Vexplore atau :Vex: Membuka explorer di vertikal split (sisi kiri).
+:Hexplore atau :Hex: Membuka explorer di horizontal split.
+Perintah di dalam Netrw:
+Enter: Masuk ke folder atau membuka file.
+-: Kembali ke direktori sebelumnya (naik satu folder).
+d: Membuat direktori baru.
+%: Membuat file baru.
+R: Mengubah nama file/folder. 
+2. Menggunakan Perintah Terminal
+nvim .: Membuka Neovim langsung pada direktori saat ini.
+:e .: Membuka file explorer di buffer aktif saat sedang mengedit. 
+3. Alternatif (Plugin NvimTree)
+Jika Anda menggunakan Neovim dengan konfigurasi seperti NvChad, biasanya menggunakan plugin NvimTree.
+Ctrl + n: Membuka atau menutup NvimTree dalam mode Normal. 
+4. Navigasi Dasar
+Gunakan tombol panah atau h, j, k, l untuk berpindah antar file/folder di netrw.
+Ctrl-o: Berguna untuk kembali ke lokasi sebelumnya. 
+Dengan menguasai :Ex atau :Vex, Anda bisa dengan mudah menjelajahi struktur folder tanpa perlu meninggalkan Neovim.
+
+
+configurasi vim dasar 
+
+mode command 
+open buka plaint theme  vim -u NONE -N vimrc
+:set number menampilkan line number pada vim non aktifkan dengan :set nonumber
+line number relative terhadap posisi cursor :set relativenumber non active dengan :set norelativenumber
+menampilkan garis/cursorline :set cursorline :set nocursorline
+
+notifikasi suara beep visual bell :set visualbell :set novisualbell
+tampilkan mode :set showmode
+
+
+syntax hightlighting :syntax on
+
+:colorscheme what 
+
+===============location of vimrc in windows 10
+
+
+================vimrc
+-menyimpan konfigurasi neovim dengan vimrc
+-neovim
+
+
+=============\ cari vimrc
+:PlugUpdate //update seluruh plugin yang terinstall 
+:PluginInstall
+:PluginUpgrade //mengupdate vim plugin manager
+
+
+================install plugin lazyvim 
+LazyExtras 
+ketik x untuk install
+untuk hapus plugin cukup comentar saja plugnya  lalu ketik :PlugClean lalu ketik Y 
+
+
+
+
+
+
