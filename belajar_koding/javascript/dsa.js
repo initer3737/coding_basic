@@ -9,9 +9,11 @@ const useState=(data)=>{
   //ketika set data dipanggil dan nanti otomatis akan mengupdate data 
   //secara reactive
   //jika param data itu fungsi maka setdata(val=>val+1)
+  ///todo /todo /todo /todo 
   const watcher=val=>{
       reactive_data.push(val);
-      
+    //<head>
+    //posisi o untuk melompat di bawah
   }
   const setdata=(new_val)=>{
        let data;

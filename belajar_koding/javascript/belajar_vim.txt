@@ -1,9 +1,9 @@
- kode normal mode tekan escape
+masuk normal mode tekan escape
 mode insert tekan i
 s untuk search text
 visual mode tekan escape lalu tekan v untuk select teks 
  :q! exit tanpa save file 
- comannd mode masuk normal mode lalu tekan : 
+ command mode masuk normal mode lalu tekan : 
 
  install framework neovim yakni lazyvim
  https://www.lazyvim.org/installation
@@ -16,11 +16,12 @@ untuk belajar neovim cari materi di youtube atau artikel bertema belajar vim
 :wq write and quit 
 load belajar file :edit belajar.txt[file yang ingin diload] ringkas :e
 
-menyimpan perubahan :w tidak disave file :q!
+menyimpan perubahan :w 
+kalau tidak disave file tekan :q!
 
-save file with new name like save as :w 
+save file with new name like save as :w basic.js 
 
-nah 
+nah  
 
 
 vim is fun and memory efficiency your computer will thanks to you
@@ -49,7 +50,9 @@ bawah L
 
 scrolling  ctrl + keys 
 halaman penuh ke depan f ke belakang b 
-halaman setengah atas u bawah d lompat ke awal file gg akhir G 
+halaman setengah atas u bawah d lompat ke awal file gg ,akhir G 
+
+
 
 copy istilahnya yank tekan tombol y, pilih teks dengan mode visual 
 paste tekan p  
@@ -57,7 +60,63 @@ undo tekan u untuk undo
 cut: d juga bisa untuk delete 
 redo tekan ctrl +r untuk redo
 d untuk delete
+x untuk delete per karakter
+dibawah kursor saat itu p
+diatas kursor saat itu 
+shift+a auto insert mode dan cursor digerakkan ke akhir kalimat
+shift+i auto insert mode dan cursor digerakkan ke akhir awal kalimat
+setelah huruf a
+sebelum huruf i
+o untuk melompat di bawah
+menghapus 1 line dd 
+===========loops
+5+l = ke kanan sebanyak 5 kali
+<int>+motion
+============last execution
+last command loop .
+=============pindahkan kursor 
+$ last 
+^ first
+0 last but in 0 line
+gg first line
+G last line
+loncat ke line number :<number> 
+20gg loncat ke line 20
+========pencarian
+? atas 
+/ ke bawah
+lalu tekan n
+t + huruf mencari[atau lompat] secara inline word huruf apa yang ingin dicari
+kalau f langsung di sebelah kanan kalau t sebelah kiri
+; untuk menuju match berikutnya
+=============pindahkan kursor 
 
+========================start of operator
+d = delete or cut
+c =change
+y =yank or copy
+ operator+motion example : dw delete 1 word forward
+cw =delete lalu insert dengan tulisan dev
+========================end of operator
+============texts object
+diw mendelete 1 kalimat yang ada di kursor saat ini innerword
+{style.main} di[ menghapus seluruh isi diantara {}
+da[ menghapus seluruh seluruh isi termasuk {}
+<p>konten ini </p>dit delete inner text didalam element html
+dat hapus seluruh teks
+shift + d cursor saat itu sampai akhir baris
+c change
+
+============texts object
+
+============view mode
+shift+v untuk menyeleksi teks dengan block
+============view mode
+========================start of motion[motion itu gerakan]
+y+5+j kopi ke bawah sebanyak 5 baris 
+w =word
+
+========================end of motion
 pencarian vim 
 tekan tombol s atau / lalu di enter
 n untuk me hightlight kata yang di cari next [maju] 
@@ -66,8 +125,9 @@ pencarian dilakukan/dimulai di posisi kursor yang terakhir aktif di line tertent
 gg [pindah kursor ke baris pertama] n untuk mencari next search result
 G untuk ke baris terakhir 
 
-untuk mempermudah tanda tekan tombol s atau / maka kerahkan kursor ke tulisan yang akan dicari lalu tekan tombol seperti * atau # 
-*digunakkan pencarian kata ke depan # ke belakang 
+untuk mempermudah tekan tombol s atau / 
+maka kerahkan kursor ke tulisan yang akan dicari lalu tekan tombol seperti * atau # 
+* digunakkan pencarian kata ke depan lalu # ke belakang 
 
 setting search 
 di comand line 
@@ -89,7 +149,8 @@ Enter: Masuk ke folder atau membuka file.
 -: Kembali ke direktori sebelumnya (naik satu folder).
 d: Membuat direktori baru.
 %: Membuat file baru.
-R: Mengubah nama file/folder. 
+R: Mengubah nama file/folder.
+ 
 2. Menggunakan Perintah Terminal
 nvim .: Membuka Neovim langsung pada direktori saat ini.
 :e .: Membuka file explorer di buffer aktif saat sedang mengedit. 
@@ -119,7 +180,7 @@ syntax hightlighting :syntax on
 :colorscheme what 
 
 ===============location of vimrc in windows 10
-
+~/.vimrc
 
 ================vimrc
 -menyimpan konfigurasi neovim dengan vimrc
@@ -136,7 +197,6 @@ syntax hightlighting :syntax on
 LazyExtras 
 ketik x untuk install
 untuk hapus plugin cukup comentar saja plugnya  lalu ketik :PlugClean lalu ketik Y 
-
 
 
 
