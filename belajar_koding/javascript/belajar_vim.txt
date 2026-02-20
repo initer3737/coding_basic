@@ -90,7 +90,11 @@ t + huruf mencari[atau lompat] secara inline word huruf apa yang ingin dicari
 kalau f langsung di sebelah kanan kalau t sebelah kiri
 ; untuk menuju match berikutnya
 =============pindahkan kursor 
-
+============switch case
+shift+~
+==============indentation
+shift ,, kiri
+shift .. kanan
 ========================start of operator
 d = delete or cut
 c =change
