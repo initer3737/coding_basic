@@ -63,8 +63,11 @@ class Basic{
         const person={
             name_person:"john",
             age:20,
-            email:"mirajons.gmail.com"
+            email:"mirajons.gmail.com",
     }
+
+
+
     const {name_person,age,email}=person
     const validate_age={
         20:"you are 20 years old",

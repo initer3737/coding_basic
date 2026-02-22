@@ -1,27 +1,74 @@
 //todo buat observer untuk mendeteksi perubahan data terkini dan reactive
 //buat tiruan dari react js usestate 
 const useState=(data)=>{
- const reactive_data=[]
+  const reactive_data=[]
+const datas=[]
+
+  datas[0]="buz "
+  datas[1]="buz "
+  datas[2]="baz"
+  
+  const data_player={
+    name:"k"
+  }
+  //09:09
+//https://www.youtube.com/watch?v=uL9oOZStezw&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R&index=6
+
   //ketika ada perubahan data maka 
-  //todo data diset misa jadi 2 maka otomatis data 
+  //todo data diset misa jadi  maka otomatis data 
   //akan diupdate jadi nilai yang baru
- //reactive_data variable menampung parameter dan nanti akan diinvoke 
+  //reactive_data variable menampung parameter dan nanti akan diinvoke 
   //ketika set data dipanggil dan nanti otomatis akan mengupdate data 
   //secara reactive
   //jika param data itu fungsi maka setdata(val=>val+1)
   ///todo /todo /todo /todo 
   const watcher=val=>{
-      reactive_data.push(val);
+    reactive_data.push(val);
+    //<head>
+    //posisi o untuk melompat di bawah
+
+  }
+  const setdata=(new_val)=>{
+    let data;
+    if(typeof new_val=== "function"){
+      //jika new_val adalah fungsi maka bisa diambil preval pakai callback
+      data_new=new_val(data)
+      return reactive_data[0]=data_new     
+    }
+
+    return reactive_data[0]=new_val  
+  }
+  //ambil data pertama saat data pertama kali diinisialisasi
+ let get_data=data
+  //ambil data terakhir di array untuk mendapatkan data reactive
+  const newest_data=()=>{
+      watcher(val=>{
+        return val 
+      })
+  }
+
+  return [ newest_data(),setdata] const reactive_data=[]
+  //ketika ada perubahan data maka 
+  //ketika ada perubahan data maka 
+  //todo data diset misa jadi 2 maka otomatis data 
+  //akan diupdate jadi nilai yang baru
+  //reactive_data variable menampung parameter dan nanti akan diinvoke 
+  //ketika set data dipanggil dan nanti otomatis akan mengupdate data 
+  //secara reactive
+  //jika param data itu fungsi maka setdata(val=>val+1)
+  ///todo /todo /todo /todo 
+  const watcher=val=>{
+    reactive_data.push(val);
     //<head>
     //posisi o untuk melompat di bawah
   }
   const setdata=(new_val)=>{
-       let data;
-      if(typeof new_val=== "function"){
-            //jika new_val adalah fungsi maka bisa diambil preval pakai callback
-             data_new=new_val(data)
-          return reactive_data[0]=data_new     
-      }
+    let data;
+    if(typeof new_val=== "function"){
+      //jika new_val adalah fungsi maka bisa diambil preval pakai callback
+      data_new=new_val(data)
+      return reactive_data[0]=data_new     
+    }
 
     return reactive_data[0]=new_val  
   }
@@ -35,9 +82,7 @@ const useState=(data)=>{
   }
 
   return [ newest_data(),setdata]
-  
 }
-
 
 
 const useParams=()=>{

@@ -203,6 +203,174 @@ ketik x untuk install
 untuk hapus plugin cukup comentar saja plugnya  lalu ketik :PlugClean lalu ketik Y 
 
 
+=========================primagen tutorial
+vim mode :visual[v] ,normal[esc] ,insert[i or a],command mode [:]
+
+movement left[h] right[l] up[k] down[j]
+delete line[dd] 
+delete 1 char[x] 
+==========motion[move the cursor]
+like jhkl
+=======on relative line number to make your life easy
+word[w] backward[b]
+8k[jump up to 8 line]
+===========command
+delete[d]
+ -delete line[dd]
+ -undo delete[u]
+d3j[delete 3 down below]
+dw[delete 1 word]
+d3w[delete 3 word]
+
+redo[ctrl+r]
+undo[u]
+2b move backward 2 times
+=============insert mode
+a move forward
+i move backward 
+
+===========visual mode
+can use motions
+y stand for yank [copy]
+shift+y+2ky [copy 1 line full and up to 2 line]
+shift+y [copy 1 line full]
+paste[p]
+
+d$ delete to the end in the cursor position
+0 go to begining in the line
+_/underscore begining in the char
+f or t ( forward to ( char 
+after search char f[what char] then hit 
+; to goes forward 
+, to goes backward 
+F= jump back to = is on the top of = sign or other chars
+T is same but will jump not on the top of = or other chars
+=========================
+reactive_data.push(val); dt( delete all the word backward except ( 
+yt(
+
+buffer =copy of file that load in the memory ram and representation of file 
+buffer is file that store it memory ram then save in to the disk 
+when developer hit : to enter command line mode then :w to save the 
+file to the disk
+===========================vertikal movement
+relative line number
+8j down to 8 line based on relative line number
+move by paragraph { up down } middle of screen
+use ctrl +d or u middle of screen
+==============searching
+press	/ button n for next search N for backward[previous search]
+press	? n backward N forward ?is reverse search
+=============================motions
+ya{ yank all between {
+viw[select innertext but not the end char] or viW[same but include the last char] view mode inner word
+yy copy 1 line full 
+
+da{ cut all content include {
+di{ cut all content in between {
+=ap is to format your code and indent your code to make your code redable and neat
+yi} copy all content inside } 
+
+yap 
+dap
+dip
+4j 
+o untuk enter cursornya ikutan 
+O kapital untuk enter tapi kursornya ada ditempatnya
+ctrl+v
+
+ctrl+a increment
+ctrl+x decrement
+
+block first all chars that u want to insert on array then open command mode :
+format array s/\(\w.*\)/data[0]="\1";
+
+const datas=[]   
+                 
+  buz
+  buz 
+  baz 
+
+% sign is to move cursor from { to } or reverse
+vi{ for block all code to select data in the {
+
+====================== neovim explorer 0 to lsp primeagen
+https://www.youtube.com/watch?v=FrMRyXtiJkc&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R&index=7
+
+d untuk membuat directory
+:hrtp
+% create file 
+init.lua untuk modifikasi neovim
+:Ex explore
+:so
+:packerSync
+============================30 command
+https://www.youtube.com/watch?v=RSlrxE21l_k
+
+:q quit
+:c change 
+:ciw change inner word
+. replay command 
+:set
+:%s/oldvalue/newvalue/g  g for global
+:%s/post/poops/g
+viw visual hightlight inner word
+
+:reg register for see what are we dont like yank
+
+//this is for register and can copy code for other text aplication
+:*register
++register
+
+==============macros 
+qh =untuk mengulang perintah ketikan q lalu dimasukkan ke register h
+untuk menjalankan macros ketik
+q@h 
+rumus 
+q@<char>
+
+
+?? untuk select all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
